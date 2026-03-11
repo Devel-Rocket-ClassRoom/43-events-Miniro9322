@@ -37,7 +37,7 @@ class Inventory
         }
         else
         {
-            items.Add(name, count);
+            Console.WriteLine("해당 아이템이 없습니다.");
         }
 
         ItemChanged?.Invoke(name, oldCount, newCount);
